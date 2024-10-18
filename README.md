@@ -19,6 +19,7 @@ Save as TXT:
 
 Copy the extracted usernames and paste them into a new Notepad file.
 Save the file as usernames.txt in an easily accessible location.
+
 Step 2: PowerShell Script Implementation ⚙️
 Open PowerShell:
 
@@ -58,6 +59,7 @@ Execute the Script:
 If script fails or the CSV is blank, you may need to run the domain users script (in this repo).
 
 Hit Enter to run the script and watch as it processes the usernames!
+
 Step 3: Review the Results 📊
 Open the password_last_set_results.csv file you generated.
 It will display usernames along with the date their passwords were last set. If any usernames weren’t found, those will be noted as well.

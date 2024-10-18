@@ -56,6 +56,8 @@ if (Test-Path $usernamesFile) {
 Important: Be sure to update the file paths for both your usernames.txt and the desired output location for the results.
 Execute the Script:
 
+If script fails or the CSV is blank, you may need to run the domain users script (in this repo).
+
 Hit Enter to run the script and watch as it processes the usernames!
 Step 3: Review the Results 📊
 Open the password_last_set_results.csv file you generated.

@@ -1,6 +1,6 @@
-# Password-Last-Set-Checker
+# Password Last Set Checker Tool 🔍
 A PowerShell tool for auditing user password last set dates.
-Password Last Set Checker Tool 🔍
+
 
 Overview
 Welcome, fellow security analysts! This project aims to help you efficiently check when passwords were last set for users identified in incident reports, threat hunts, or IDR reports. Let’s get started!

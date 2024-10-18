@@ -2,7 +2,6 @@
 A PowerShell tool for auditing user password last set dates.
 
 
-Overview
 Welcome, fellow security analysts! This project aims to help you efficiently check when passwords were last set for users identified in incident reports, threat hunts, or IDR reports. Let’s get started!
 
 Step 1: Prepare Your Email List 📧

@@ -26,35 +26,15 @@ Open PowerShell:
 Search for PowerShell in your Start menu and launch it.
 Prepare the Script:
 
-Copy and paste the following script, which checks the last password set date for each user:
-powershell
-Copy code
-$usernamesFile = "C:\path\to\your\usernames.txt"  # Update this path!
-$results = @()
+Use the appropriate script for the job (files in repo):
+- PasswordChecker.ps1
+- PasswordCheckerDomainUsers.ps1
 
-if (Test-Path $usernamesFile) {
-    $usernames = Get-Content $usernamesFile
+Copy and paste or download the  script, which checks the last password set date for each user
 
-    foreach ($username in $usernames) {
-        $output = net user $username 2>&1
-        if ($output -match "User name") {
-            foreach ($line in $output) {
-                if ($line -match "Password last set") {
-                    $results += "$username, $line"
-                }
-            }
-        } else {
-            $results += "$username, User not found"
-        }
-    }
-
-    $results | Out-File "C:\path\to\your\password_last_set_results.csv"  # Update this path!
-    Write-Host "Results saved to password_last_set_results.csv"
-} else {
-    Write-Host "Usernames file not found."
-}
 
 Important: Be sure to update the file paths for both your usernames.txt and the desired output location for the results.
+
 Execute the Script:
 
 If script fails or the CSV is blank, you may need to run the domain users script (in this repo).

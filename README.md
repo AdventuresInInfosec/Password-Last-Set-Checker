@@ -53,6 +53,7 @@ if (Test-Path $usernamesFile) {
 } else {
     Write-Host "Usernames file not found."
 }
+
 Important: Be sure to update the file paths for both your usernames.txt and the desired output location for the results.
 Execute the Script:
 
